@@ -99,12 +99,19 @@ function agregarAlCarrito(e) {
     
 }
 
-function finCompra() {
+
     const btnFinCom = document.querySelector('#finCom')
     btnFinCom.addEventListener('click', () => {
-        Swal.fire('primer sweet alert')
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Gracias Por su compra!!!',
+            text: 'Esperamos su regreso',
+            showConfirmButton: false,
+            timer: 1500
+          })
     })
-}
+
 
     
 
